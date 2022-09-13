@@ -53,10 +53,12 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
+
+
 }
 
 .section {
@@ -71,11 +73,16 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.nav {
+.header-wrapper {
   display: flex;
   align-items: center;
   min-height: 80px;
-  padding: 24px 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 
 .nav-logo {
@@ -94,20 +101,23 @@ body {
 }
 
 .nav-list {
-  margin-right: 344px;
+  display: flex;
 }
 
 .nav-list,
 .contact-list {
-  display: flex;
-
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.contact-list {
+  display: flex;
 }
 
 .nav-link {
   color: var(--secondary-text-color);
   font-weight: 500;
+  padding: 32px 0;
 }
 
 .nav-item,
@@ -124,6 +134,7 @@ body {
 .contact-link[href^="tel"] {
   color: var(--primary-text-color);
   font-weight: 500;
+  padding: 32px 0;
 }
 
 .nav-link:hover,
@@ -153,7 +164,6 @@ body {
 }
 
 .hero-btn {
-  display: block;
   padding: 10px 32px;
   margin: 0 auto;
 
@@ -162,7 +172,6 @@ body {
   line-height: 1.8;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
-  text-align: center;
 
   background-color: var(--accent-background-color);
   border: none;
@@ -175,7 +184,6 @@ body {
 .benefits {
   padding-top: 94px;
   padding-bottom: 47px;
-  background-color: var(--primary-background-color);
 }
 
 .benefits-list {
@@ -299,6 +307,7 @@ body {
   font-size: 16px;
   color: var(--secondary-text-color);
   font-weight: 500;
+  line-height: 1.5;
 
   background-color: var(--secondary-background-color);
   border: none;
@@ -322,8 +331,6 @@ body {
 .portfolio-works {
   display: flex;
   flex-wrap: wrap;
-
-  width: 1170px;
 }
 
 .portfolio-work-item {
@@ -361,6 +368,8 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   font-weight: 700;
+
+  margin-bottom: 10px;
 }
 
 .portfolio-work-desc {
